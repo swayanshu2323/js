@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap" rel="stylesheet">
+    <style>
+        *{margin: 0;padding: 0;}
+        header{
+            background-color: rgba(11, 34, 37, 0.926);   
+            text-align: center;
+            height: 7vh;
+        }
+        header ul {
+            list-style: none; 
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        .drop  ul li a{
+            margin-left: -30px;
+            margin-right: 5px;
+        }
+        header ul li {
+            margin-left: 40px;
+        }
+        header ul li a{
+            display: block;
+            color: rgb(248, 246, 246);
+            text-decoration:underline transparent;  
+            font-size:20px;
+            line-height: 7vh;
+        }
+        header  ul li a:hover{
+            text-decoration: underline rgb(29, 219, 159);;
+            transition-property: text-decoration;
+            transition-duration: 0.1s;
+            transition-timing-function: linear;
+        }
+        footer{
+            background-color: rgba(24, 24, 24, 0.926);
+            height: 15vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        footer div{
+            color: rgb(74, 73, 73);
+        }
+        .content{
+            height: 80vh;
+        }
+         .displayimage{
+            background-image:url(https://img.freepik.com/free-vector/programming-concept-illustration_114360-1351.jpg?w=740&t=st=1686505976~exp=1686506576~hmac=41ca0b976479c4b45a1ae08e2b277266d0d02d27abe06d50520dc84ba964b095);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: right;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .logo{
+            font-family: 'Tilt Prism', cursive;
+            font-size: 200px;
+            color: rgb(29, 219, 159);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 80vh;
+            width: 52vw;
+        }
+        @media screen and (max-width: 412px){
+            .displayimage{
+            background-image:url(https://wallpapercave.com/wp/wp2465900.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 100vw;
+            height: 300px;
+            }
+            .logo{
+            font-family: 'Tilt Prism', cursive;
+            font-size: 100px;
+            color: yellowgreen;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 300px;
+            width: 38vw;
+            }
+        }
+        header ul li .drop {
+            display: none;
+        }
+        header ul li:hover .drop{
+            display: block;
+            position: absolute;
+            right:704px;
+            background-color: rgba(11, 34, 37, 0.926);
+            border-radius: 20px;
+
+        }
+        header ul li:hover .drop ul{
+            display: block;
+        }
+
+        
+    </style>
+</head>
+<body>
+        <header>
+            <ul>
+                <li><a href="">Home</a>
+                </li>
+                <li><a href="">About</a>
+                </li>
+                <li><a href="">Study</a>
+                    <div class="drop">
+                    <ul>
+                        <li><a href="">Chapter 1</a></li>
+                        <li><a href="https://swayanshu2323.github.io/2.0/">Chapter 2</a></li>
+                        <li><a href="">Chapter 3</a></li>
+                        <li><a href="">Chapter 4</a></li>
+                        <li><a href="">Chapter 5</a></li>
+                        <li><a href="">Chapter 6</a></li>
+                        <li><a href="">Chapter 7</a></li>
+                        <li><a href="">Chapter 8</a></li>
+                        <li><a href="">Chapter 9</a></li>
+                    </ul>
+                    </div>
+                </li>
+                <li><a href="">Contact us</a></li>
+                <li><a href="">More</a></li>
+            </ul>
+        </header>
+    <div class="content">
+        <div class="displayimage">
+            <div class="logo">
+                <div>Js</div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div>
+            copyright&copy2003-2019swayanshusubham.com
+        </div>
+    </footer>
+</body>
+</html>
